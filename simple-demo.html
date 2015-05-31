@@ -1,0 +1,26 @@
+<head>
+  <title>simple-demo</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+
+</body>
+
+<template name="hello">
+
+	<h3>Database Everywhere</h3>
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+
+  {{> reactivity}}
+</template>
+
+<template name="reactivity">
+	<h3>Reactivity</h3>
+	<!-- unpack our coordinates from the coordinate document -->
+	<p><b>x:</b>{{coord.x}}, <b>y:</b>{{coord.y}}</p>
+</template>
